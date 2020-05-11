@@ -1,0 +1,294 @@
+/* elements style */
+body {
+  font-family: "Inter";
+  background-color: #1e202a;
+  width: 1440px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+  color: white;
+  font-weight: 700;
+}
+
+p {
+  color: #8b97c6;
+  font-weight: 700;
+}
+
+
+/* top section */
+
+#dark_mode_text {
+  position: relative;
+  left: -96px;
+  width: 7rem;
+  font-weight: 700;
+}
+
+#Top {
+  background-color: #212331;
+  border-radius: 0 0 33px 33px;
+}
+
+.container-fliud {
+  padding: 0% 9% 0%;
+  height: 20rem;
+}
+
+.navbar {
+  padding: 5% 0% 5% 0%;
+}
+
+.top-card {
+  width: 17rem;
+  height: 15rem;
+  text-align: center;
+}
+
+.line-visible {
+  visibility: hidden;
+  border-top: 1px solid;
+}
+
+/* bottom section */
+#bottom .container-fliud {
+  padding: 14% 9%;
+}
+
+.bottom-row {
+  padding: 14px 15px;
+  border-radius: 10px;
+}
+
+.bottom-card {
+  width: 17rem;
+  height: 8rem;
+}
+
+/* cards styles */
+.card {
+  background-color: #252a41;
+  border: 0;
+  cursor: pointer;
+}
+
+.card :hover {
+  background-color: #414b71;
+}
+
+.card-subtitle {
+  letter-spacing: 4px;
+}
+
+/* borders color */
+.border-color1 {
+  border-top: 4px solid deepskyblue !important;
+}
+
+.border-color2 {
+  border-top: 4px solid #1ca0f2 !important;
+}
+
+.border-color3 {
+  border-top: 4px solid transparent !important;
+  -o-border-image: linear-gradient(to right, #fdc468, #df4996);
+  border-image: -webkit-gradient(linear, left top, right top, from(#fdc468), to(#df4996));
+  border-image: linear-gradient(to right, #fdc468, #df4996);
+  border-image-slice: 1%;
+}
+
+.border-color4 {
+  border-top: 4px solid #c4032a !important;
+}
+
+/* icon colors and font colors */
+.icon-color {
+  background: -webkit-gradient(linear, left top, right top, from(#fdc468), to(#df4996));
+  background: linear-gradient(to right, #fdc468, #df4996);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.text-color {
+  color: #8b97c6;
+  font-weight: 700;
+}
+
+.text-color2 {
+  color: #609a96;
+  font-family: "Inter";
+  font-weight: 600;
+}
+
+
+/* dark mode toggle button */
+.switch {
+  display: block;
+  position: relative;
+  width: 4%;
+  height: 1.5rem;
+  left: -8px;
+  top: -23px;
+  background-color: #ccc;
+  border-radius: 50px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  background: -webkit-gradient(linear, left top, left bottom, from(#378fe6), to(#3eda82));
+  background: linear-gradient(#378fe6, #3eda82);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  background-color: #252B45;
+  width: 20px;
+  height: 20px;
+  top: 2.4px;
+  left: 3px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+input:checked+.slider {
+  background: #aeb3cb;
+}
+
+input:checked+.slider::before {
+  -webkit-transform: translateX(21px);
+  transform: translateX(21px);
+  background-color: white;
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50px;
+}
+
+
+/* dark mode styles */
+.darkmode {
+  background-color: white !important;
+}
+
+.darkmode #Top {
+  background-color: #f5f7ff;
+}
+
+.darkmode .card {
+  background-color: #f0f2fa;
+}
+
+.darkmode h1,
+.darkmode h3 {
+  color: black;
+  font-family: "Inter";
+  font-weight: 700;
+}
+
+.darkmode h2 {
+  color: #609a96;
+  font-family: "Inter";
+  font-weight: 700;
+}
+
+.darkmode .text-color {
+  color: #63687e;
+  font-weight: 700;
+}
+
+.darkmode p {
+  color: #63687e;
+  font-weight: 700;
+}
+
+.darkmode .card :hover {
+  background-color: #e0e2f0;
+}
+
+
+/* responsive styles */
+@media (max-width: 1024px) {
+  #Top {
+    border-radius: 0 0 19px 19px;
+  }
+
+  body {
+    width: 375px;
+  }
+
+  .container-fliud {
+    height: 15rem;
+  }
+
+  .navbar {
+    padding: 11% 0% 14% 0%;
+  }
+
+  .nav-item h1 {
+    font-size: 26px;
+  }
+
+  .line-visible {
+    visibility: visible;
+  }
+
+  .switch {
+    width: 47px;
+    height: 1.5rem;
+    left: 16.5rem;
+    top: 0.65rem;
+  }
+
+  .slider:before {
+    top: 1.4px;
+    left: 3px;
+  }
+
+  #dark_mode_text {
+    left: -16.5rem;
+  }
+
+  .top-row {
+    padding: 11px 6px;
+  }
+
+  .top-card {
+    width: 20rem;
+  }
+
+  #bottom .container-fliud {
+    margin-top: 62rem;
+  }
+
+  .bottom-row {
+    padding: 8px 8px;
+  }
+
+  .bottom-card {
+    width: 20rem;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+}
